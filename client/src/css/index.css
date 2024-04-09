@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+* {
+    font-family: "Merriweather", serif;
+}
+
+.container {
+    width: 50vw;
+    margin: 0 auto;
+    padding: 50px 0;
+    transition: width .5s ease .0s;
+}
+
+.centered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number {
+    width: 100%;
+    margin: 0 10px;
+    padding: 15px 20px;
+    outline-color: #4287f5;
+    transition: all .5s ease .0s;
+}
+
+.number:focus {
+    outline-width: 5px;
+}
+
+.submit {
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: #5193fc;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: all .5s ease .0s;
+}
+
+.submit:hover {
+    background-color: #0256db;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 70vw !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 90vw !important;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .wrapper {
+        display: flex !important;
+        flex-direction: column;
+        margin-bottom: 15px !important;
+    }
+
+    .logo {
+        width: 150px !important;
+        margin-bottom: 10px;
+    }
+
+    .number {
+        margin: 0 !important;
+        padding: 10px 10px !important;
+        transition: none !important;
+    }
+
+    .submit {
+        transition: none !important;
+    }
+}
